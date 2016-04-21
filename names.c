@@ -438,5 +438,5 @@ int names_init(void)
 void names_exit(void)
 {
 	hwdb = udev_hwdb_unref(hwdb);
-	udev = udev_unref(udev);
+	udev_unref(udev);
 }

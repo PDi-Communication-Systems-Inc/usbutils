@@ -21,7 +21,6 @@
 
 /*****************************************************************************/
 
-#include "config.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -4125,7 +4124,7 @@ int main(int argc, char *argv[])
 			long_options, NULL)) != EOF) {
 		switch (c) {
 		case 'V':
-			printf("lsusb (" PACKAGE ") " VERSION "\n");
+			printf("lsusb 0.09 \n");
 			return EXIT_SUCCESS;
 		case 'v':
 			verblevel++;
